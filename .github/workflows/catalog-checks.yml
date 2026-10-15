@@ -6,18 +6,7 @@ name: Catalog checks
 # than silently reverted by the next person who runs the script.
 
 on:
-  pull_request:
-    paths:
-      - "categories/**"
-      - "scripts/build-readme.py"
-      - "tags.json"
-      - "README.md"
-      - "CONTRIBUTING.md"
-      - "scripts/audit-tags.py"
-      - "scripts/jev-ray.py"
-      - "scripts/tests/**"
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   check:
